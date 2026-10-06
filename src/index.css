@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #EAEBF0;
+    background-color: #090A0F;
+    overflow-x: hidden;
+  }
+
+  code, pre, kbd, samp {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Hairline border utilities */
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-subtle-hover:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Grid background pattern */
+.bg-grid-subtle {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-dot-subtle {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}

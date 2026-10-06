@@ -1,0 +1,6 @@
+{
+  "name": "Strata | Deterministic Distributed State Engine",
+  "description": "High-performance causal-ordered state log and real-time synchronization engine for mission-critical engineering systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
